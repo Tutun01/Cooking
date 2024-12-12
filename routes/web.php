@@ -3,7 +3,7 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
+Route::get('/welcome', function () {
     return view('welcome');
 });
 
@@ -17,10 +17,15 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
+Route::get("/admin/delete-product/{product}", [\App\Http\Controllers\MenuController::class, 'delete']);
+
+Route::view("/admin/add-product", 'add-product');
+Route::post("/admin/add-new-product", [\App\Http\Controllers\MenuController::class, 'addProduct'])
+    ->name('add.product');
+
 require __DIR__.'/auth.php';
 
 Route::get("/menu", [\App\Http\Controllers\MenuController::class, 'getAll'])
-
     ->name('menu');
 
 Route::view("/service", 'service')
