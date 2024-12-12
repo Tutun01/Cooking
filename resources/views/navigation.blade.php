@@ -16,7 +16,10 @@
                     <a class="nav-link" href="/service">Service</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/register">CheckIn</a>
+                    <a class="nav-link" href="/register">Register</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/login">LogIn</a>
                 </li>
 
             </ul>
