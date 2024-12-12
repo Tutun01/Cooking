@@ -18,6 +18,32 @@
     <p> <span class="fw-bold"> Quality ingredients: </span>  "We use only the highest quality and freshest ingredients to prepare your meals."</p>
     <p> <span class="fw-bold"> Stress-free: </span> "Leave everything to us – from menu planning to cleaning up after the meal."</p>
 
+
+    <div class="d-flex justify-content-between flex-wrap">
+        <div class="card" style="width: 18rem;">
+            <img src="/img/caprese.jpg" class="card-img-top" alt="caprese">
+            <div class="card-body">
+                <p class="card-text"><span class="fw-bold"> Caprese salad </span>is a simple and refreshing Italian dish that combines the freshness of tomatoes, creamy mozzarella cheese, and aromatic basil..</p>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="/img/wings.jpg" class="card-img-top" alt="wings">
+            <div class="card-body">
+                <p class="card-text"><span class="fw-bold">Buffalo wings</span> are a popular American dish consisting of battered chicken wings coated in a spicy sauce.</p>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="/img/salmon.jpg" class="card-img-top" alt="salmon">
+            <div class="card-body">
+                <p class="card-text"><span class="fw-bold">Grilled salmon</span> is a simple and healthy dish consisting of fresh salmon fillets grilled to perfection.</p>
+            </div>
+        </div>
+    </div>
+
+
 @endsection
+
 
 
