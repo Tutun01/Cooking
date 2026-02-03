@@ -1,23 +1,33 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand d-flex align-items-center" href="/welcome">
+            <img src="{{ asset('img/logo.png')  }}" alt="Luxury Chef" class="navbar-logo">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav"
+                aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav ms-auto">
+
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/welcome">Home</a>
+                    <a class="nav-link active" href="/welcome">Home</a>
                 </li>
+
                 <li class="nav-item">
                     <a class="nav-link" href="/menu">Menu</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/service">Service</a>
-                </li>
+
+
+
                 <li class="nav-item">
                     <a class="nav-link" href="/register">Register</a>
                 </li>
+
                 <li class="nav-item">
                     <a class="nav-link" href="/login">LogIn</a>
                 </li>
