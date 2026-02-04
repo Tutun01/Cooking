@@ -22,15 +22,29 @@
                     <a class="nav-link" href="/menu">Menu</a>
                 </li>
 
+                @auth
+                    <li class="nav-item">
+                        <a href="/reservation" class="nav-link">
+                            Reservations
+                        </a>
+                    </li>
 
-
-                <li class="nav-item">
-                    <a class="nav-link" href="/register">Register</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="/login">LogIn</a>
-                </li>
+                    <li class="nav-item">
+                        <form method="POST" action="{{ route('logout') }}" class="logoutForm">
+                            @csrf
+                            <button type="submit" class="logoutBtn">
+                                Logout
+                            </button>
+                        </form>
+                    </li>
+                @else
+                    <li class="nav-item">
+                        <a href="/login" class="nav-link">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/register" class="nav-link">Register</a>
+                    </li>
+                @endauth
 
             </ul>
         </div>

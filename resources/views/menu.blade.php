@@ -26,7 +26,7 @@
                         @endforeach
                     </ul>
 
-                    <a href="#" class="viewMenuBtn">Explore Menu</a>
+                    <a href="{{ route('menuItems', $menu->id) }}" class="viewMenuBtn">Explore Menu</a>
                 </div>
 
                 <div class="menu-image"
