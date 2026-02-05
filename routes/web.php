@@ -34,12 +34,13 @@ Route::post('/logout', function () {
     return redirect('/login');
 })->name('logout');
 
-Route::get('/reservation', function () {
-    return view('reservation');
-})->middleware('auth');
+Route::middleware('auth')->group(function () {
 
-Route::get('/reservation', [ReservationController::class, 'create'])
-    ->middleware('auth');
+    Route::get('/reservation', [ReservationController::class, 'create'])
+        ->name('reservation.create');
 
-Route::post('/reservation', [ReservationController::class, 'store'])
-    ->middleware('auth');
+    Route::post('/reservation', [ReservationController::class, 'store'])
+        ->name('reservation.store');
+
+});
+
