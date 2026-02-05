@@ -1,3 +1,3 @@
-<footer class="bg-dark text-white d-flex justify-content-center align-items-center">
+<footer class="bg-dark text-white d-flex justify-content-center align-items-center m-b-0">
     <p class="m-0"> Copyright &copy;2024</p>
 </footer>
