@@ -3,6 +3,8 @@
     padding: 0;
 }
 
+
+
 .navbar-logo {
     height: 60px;
     width: auto;
@@ -22,6 +24,11 @@
 
 .navbar-nav .nav-item {
     margin-left: 18px;
+}
+
+.navbar-nav .nav-link {
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
 #banner {
@@ -531,33 +538,39 @@
 }
 
 .logoutForm {
-    margin-left: 15px;
+    margin: 0;
 }
 
-.logoutBtn {
-    padding: 8px 22px;
-    border-radius: 30px;
+.logout-link {
     background: transparent;
-    border: 2px solid #d4af37;
+    border: 2px solid #d4af37; /* gold */
     color: #d4af37;
+    padding: 6px 18px;
+    border-radius: 999px;
     font-size: 14px;
     font-weight: 500;
-    transition: all 0.3s ease;
+    line-height: 1;
+    transition: all 0.25s ease;
+    cursor: pointer;
+
 }
 
-.logoutBtn:hover {
+.logout-link:hover {
     background: #d4af37;
     color: #000;
 }
 
-.logoutBtn:focus {
+.logout-link:focus {
     outline: none;
-    box-shadow: 0 0 0 3px rgba(17, 17, 17, 0.15);
+    box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.3);
 }
 
-
-.logoutBtn:active {
-    transform: scale(0.96);
+.reservation-page {
+    min-height: calc(102vh - 160px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 60px;
 }
 
 .reservation-wrapper {
@@ -765,20 +778,30 @@
     .auth-card {
         padding: 40px 25px;
     }
-    .reservation-wrapper {
-        padding: 40px 25px 50px;
-    }
 
-    .reservation-wrapper h1 {
-        font-size: 32px;
+    .reservation-wrapper {
+        padding: 30px 20px;
+        border-radius: 20px;
     }
 
     .form-row {
         grid-template-columns: 1fr;
     }
 
+    .reservation-form input,
+    .reservation-form textarea {
+        font-size: 15px;
+        padding: 14px 16px;
+    }
+
     .reservation-btn {
         width: 100%;
-        padding: 16px;
+        font-size: 16px;
+    }
+
+    .logout-link {
+        width: 100%;
+        text-align: center;
+        margin-top: 8px;
     }
 }
