@@ -1,7 +1,7 @@
 @extends("layout")
 
 @section("title")
-    Dashboardpage
+    Homepage
 @endsection
 
 @section("pageContent")
